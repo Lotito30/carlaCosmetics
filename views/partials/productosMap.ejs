@@ -1,0 +1,23 @@
+<!-- swiper -->
+<% productos.map((producto,indice) => { %>
+    <div class="home-swiper swiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="swiper-slide">
+                <% if (indice < 3){ %>
+                    <div>
+                        <h3>
+                            <%= producto.nombre %>
+                        </h3>
+                        <p>
+                            <%= producto.descripcion %>
+                        </p>
+                        <img src="<%= producto.imagen %>" 
+                        alt="<%= producto.alt %>" />
+                    </div>
+                <% } %>          
+            </div>
+        </div>
+<% }) %> 
+<div class="swiper-pagination"></div>
+</div>
+

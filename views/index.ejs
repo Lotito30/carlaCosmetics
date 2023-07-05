@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head") %>
+<body>
+    <%- include("./partials/header") %>
+    
+    <!-- seccion principal al abrir la pagina -->
+    <section id="home">
+        <div class="contenedor">
+            <div class="contenedorContenido">
+                <h1>CarlaCosmetics</h1>
+                <img src="image/cosmeticos4.jpg"
+                alt="fotoPrincipal">
+                <!-- ciclo para mostrar los productos de uno en uno dentro del principal en un swiper -->
+                <div class="contenidoProductos">
+                    <%- include("./partials/productosMap") %>                      
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ciclo para mostrar los productos -->
+    <section id="products">
+        <div class="contenedor">
+            <div class="contenedorContenido">
+                <h1>products</h1>
+                <div class="contenidoProductos">
+                    <%productos.map((producto,indice) => { %>
+                        <% if (indice < 2){ %>
+                            <div>
+                                <h3>
+                                    <%= producto.nombre %>
+                                </h3>
+                                <p>
+                                    <%= producto.descripcion %>
+                                </p>
+                                <img src="<%= producto.imagen %>" 
+                                alt="<%= producto.alt %>" />
+                            </div>
+                        <% } %>
+                        <% }) %> 
+                        <a href="/productos">see more</a>           
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutUs">
+        <div class="contenedor">
+            <div class="contenedorContenido">
+            <h1>about us</h1>
+                <p>Welcome to <strong>[Your Business Name]</strong>, your destination for high-quality organic hygiene products. We are dedicated to providing you with the best natural solutions for your personal care needs.
+                At <strong>[Your Business Name]</strong>, we believe in the power of nature and its ability to nurture and heal. That's why we have carefully curated a collection of organic hygiene products that are free from harsh chemicals and harmful ingredients. Our products are ethically sourced and crafted with love to ensure you receive the highest level of quality and effectiveness.
+                Our founder, <strong>[Founder's Name]</strong>, is a passionate entrepreneur who embarked on this journey to make a positive impact on people's lives and the environment. With a deep commitment to sustainability, we strive to minimize our ecological footprint by using eco-friendly packaging and supporting ethical practices throughout our supply chain.
+                Whether you're looking for natural skincare, haircare, or personal hygiene essentials, we've got you covered. Our products are formulated with the finest organic ingredients, carefully selected for their nourishing and rejuvenating properties.
+                We value our customers and their well-being, which is why we prioritize exceptional customer service. Our knowledgeable team is here to assist you and provide personalized recommendations to meet your specific needs.
+                Thank you for choosing <strong>[Your Business Name]</strong> as your trusted source for organic hygiene products. Join us on this journey towards a healthier and more sustainable lifestyle.
+                Feel free to reach out to us with any <i>questions</i>, <i>feedback</i>, or <i>suggestions</i>. We're excited to be a part of your wellness routine!
+                [Contact Information] </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="contenedor">
+            <div class="contenedorContenido">
+                <h1>reviews</h1>
+                <%- include("./partials/reviewsMap") %>  
+            </div>
+        </div>                    
+
+    </section>
+    <%- include("./partials/footer") %>
+<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

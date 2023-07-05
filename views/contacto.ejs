@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<<%- include ('./partials/head') %>
+<body>
+    <%- include ('./partials/header') %>
+    <div class="formularioContacto">
+        <h1>Contact Us</h1>
+    <form action="/" method="post">
+        <input type="text" name="nombre" id="nombre" placeholder="Your Name" autofocus autocomplete="name"required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <textarea name="mensaje" id="textarea" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
+        <i class="fas fa-check-circle"></i><input type="submit" value="Send">
+    </form>
+
+    </div>
+    <%- include ('./partials/footer') %>
+</body>
+</html>
+

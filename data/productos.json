@@ -1,0 +1,23 @@
+[
+    {
+        "id":"1",
+        "nombre":"Shampoo",
+        "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, architecto!",
+        "imagen":"image/cosmeticos1.jp",
+        "alt":"ShampooAloevera"  
+    },
+    {
+        "id":"2",
+        "nombre":"Crema Corporal",
+        "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, architecto!",
+        "imagen":"image/cosmeticos2.jp",
+        "alt":"cremaCorporalAloevera"  
+    },
+    {
+        "id":"3",
+        "nombre":"Acondicionador",
+        "descripcion":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, architecto!",
+        "imagen":"image/cosmeticos3.jp",
+        "alt":"acondicionadorAloevera"  
+    }
+]
